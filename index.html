@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Verificación de Pinterest -->
+    <meta name="p:domain_verify" content="67a31b32bd44bc6ea033048feccd1827" />
     <title>Fedora™ Studio · Business Intelligent Solutions</title>
     <!-- Google Fonts + Font Awesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -10,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <style>
-        /* ===== ESTILOS COMPLETOS (igual que antes) ===== */
+        /* ===== ESTILOS PRINCIPALES (Fedora Studio) ===== */
         * {
             margin: 0;
             padding: 0;
@@ -524,17 +526,253 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* ===== ESTILOS EXCLUSIVOS PARA FEDORA ACADEMY (SCOPE) ===== */
+        .academy-wrapper {
+            background: #f4f8fb;
+            padding: 2rem 0 1.5rem;
+            border-radius: 32px;
+            margin-top: 20px;
+        }
+        .academy-wrapper .container {
+            max-width: 1400px;
+        }
+        .academy-wrapper .section-block {
+            background: white;
+            border-radius: 28px;
+            padding: 2rem 2rem 1.8rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e9f0f6;
+            transition: 0.2s;
+        }
+        .academy-wrapper .section-block:hover {
+            border-color: #c0d8e8;
+        }
+        .academy-wrapper .section-title-academy {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: #0b2b4a;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 0.4rem;
+            flex-wrap: wrap;
+        }
+        .academy-wrapper .section-sub {
+            color: #4a6a85;
+            font-size: 1rem;
+            font-weight: 400;
+            margin-left: 0.5rem;
+            background: #ecf3f9;
+            padding: 0.1rem 1rem;
+            border-radius: 30px;
+        }
+        .academy-wrapper .section-desc {
+            color: #3d5d78;
+            margin-bottom: 1.8rem;
+            font-size: 1.05rem;
+            border-left: 4px solid #00a3b2;
+            padding-left: 1rem;
+            background: #f7fafc;
+            border-radius: 0 12px 12px 0;
+            padding: 0.7rem 1.2rem;
+        }
+        .academy-wrapper .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        .academy-wrapper .course-item {
+            background: #f9fcff;
+            border-radius: 18px;
+            padding: 1.5rem 1.2rem;
+            border: 1px solid #e3ecf5;
+            transition: 0.2s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .academy-wrapper .course-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 163, 178, 0.10);
+            border-color: #9dcbd6;
+        }
+        .academy-wrapper .course-item h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #0b2b4a;
+            margin-bottom: 0.4rem;
+        }
+        .academy-wrapper .course-item .ia-tag {
+            font-size: 0.75rem;
+            background: #def0f5;
+            color: #006b7a;
+            padding: 0.15rem 0.8rem;
+            border-radius: 30px;
+            display: inline-block;
+            margin-bottom: 0.6rem;
+            font-weight: 600;
+        }
+        .academy-wrapper .course-item .ia-tag-ai {
+            background: #e8f0fe;
+            color: #1a5a8a;
+        }
+        .academy-wrapper .course-item .ia-tag-noai {
+            background: #f0f0f0;
+            color: #555;
+        }
+        .academy-wrapper .course-item .ia-tag-gold {
+            background: #f1e4d0;
+            color: #7a4d12;
+        }
+        .academy-wrapper .course-item p {
+            font-size: 0.9rem;
+            color: #3a5a75;
+            line-height: 1.5;
+            flex-grow: 1;
+            margin-bottom: 0.6rem;
+        }
+        .academy-wrapper .course-item .ai-tools {
+            font-size: 0.8rem;
+            color: #006b7a;
+            background: #eef6f9;
+            padding: 0.3rem 0.8rem;
+            border-radius: 30px;
+            display: inline-block;
+            margin-bottom: 0.8rem;
+            font-weight: 500;
+        }
+        .academy-wrapper .course-item .price-tag {
+            font-weight: 700;
+            color: #0b2b4a;
+            background: #e5f0f5;
+            padding: 0.2rem 0.9rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            align-self: flex-start;
+            margin-bottom: 0.8rem;
+        }
+        .academy-wrapper .btn-group {
+            display: flex;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+            margin-top: 0.3rem;
+        }
+        .academy-wrapper .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem 1.2rem;
+            border-radius: 60px;
+            font-weight: 600;
+            font-size: 0.82rem;
+            text-decoration: none;
+            transition: 0.2s;
+            border: none;
+            cursor: pointer;
+            background: #eef2f7;
+            color: #1a3a55;
+        }
+        .academy-wrapper .btn-primary {
+            background: #00a3b2;
+            color: white;
+        }
+        .academy-wrapper .btn-primary:hover {
+            background: #008694;
+            transform: scale(1.02);
+        }
+        .academy-wrapper .btn-whatsapp {
+            background: #25d366;
+            color: white;
+        }
+        .academy-wrapper .btn-whatsapp:hover {
+            background: #1da851;
+            transform: scale(1.02);
+        }
+        .academy-wrapper .btn-paypal-card {
+            background: #0070ba;
+            color: white;
+            font-weight: 700;
+            padding: 0.6rem 1.5rem;
+        }
+        .academy-wrapper .btn-paypal-card:hover {
+            background: #005c9e;
+            transform: scale(1.02);
+        }
+        /* Bloques Especiales */
+        .academy-wrapper .rd-block {
+            border-left: 8px solid #d48f2b;
+            background: #fefcf7;
+        }
+        .academy-wrapper .rd-block .section-title-academy {
+            color: #7a4d12;
+        }
+        .academy-wrapper .rd-block .course-item {
+            background: #fffbf3;
+            border-color: #f0e2cc;
+        }
+        .academy-wrapper .rd-block .course-item .ia-tag {
+            background: #f1e4d0;
+            color: #7a4d12;
+        }
+        .academy-wrapper .hr-block {
+            border-left: 8px solid #8b5cf6;
+            background: #faf8ff;
+        }
+        .academy-wrapper .hr-block .section-title-academy {
+            color: #5b21b6;
+        }
+        .academy-wrapper .hr-block .course-item {
+            background: #fbfaff;
+            border-color: #ddd6fe;
+        }
+        .academy-wrapper .hr-block .course-item .ia-tag {
+            background: #ede9fe;
+            color: #5b21b6;
+        }
+        .academy-wrapper .rd-message {
+            margin-top: 1.5rem;
+            background: #f3ede4;
+            padding: 1rem 1.5rem;
+            border-radius: 16px;
+            text-align: center;
+        }
+        .academy-wrapper .rd-message p {
+            font-weight: 600;
+            color: #4f3a1c;
+        }
+        .academy-wrapper .rd-message a {
+            color: #006b7a;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .academy-wrapper .rd-message a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 700px) {
+            .academy-wrapper .section-title-academy {
+                font-size: 1.5rem;
+                flex-wrap: wrap;
+            }
+            .academy-wrapper .course-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <!-- NAVBAR -->
+    <!-- ============================================== -->
+    <!-- NAVBAR (Fedora Studio + Academia)              -->
+    <!-- ============================================== -->
     <nav class="navbar">
         <div class="container">
             <div class="logo">Fedora™ <span>Studio</span></div>
             <div class="nav-links">
                 <a href="#servicios">Servicios</a>
                 <a href="#agentes">Agentes IA</a>
+                <a href="#academy">📘 Academia</a>
                 <a href="#pagos">Pagos</a>
                 <a href="#contacto">Contacto</a>
                 <a href="#notion" class="btn-cta"><i class="fas fa-arrow-right"></i> Ver Notion</a>
@@ -542,7 +780,9 @@
         </div>
     </nav>
 
-    <!-- HERO -->
+    <!-- ============================================== -->
+    <!-- HERO                                          -->
+    <!-- ============================================== -->
     <section class="hero">
         <div class="container">
             <div>
@@ -556,7 +796,6 @@
                 </div>
                 <div class="hero-buttons">
                     <a href="#servicios" class="btn-primary"><i class="fas fa-briefcase"></i> Ver carteras</a>
-                    <!-- BOTÓN CORREGIDO: ahora apunta directamente a Calendly -->
                     <a href="https://www.calendly.com/fedorabueno/consultas" target="_blank" class="btn-secondary"><i class="fas fa-calendar-check"></i> Agendar consulta</a>
                 </div>
             </div>
@@ -570,7 +809,9 @@
         </div>
     </section>
 
-    <!-- SERVICIOS -->
+    <!-- ============================================== -->
+    <!-- SERVICIOS (Carteras 1 al 9)                    -->
+    <!-- ============================================== -->
     <div class="container" id="servicios">
         <div class="section-title">
             <h2><i class="fas fa-folder-open"></i> Carteras de servicios</h2>
@@ -1293,11 +1534,785 @@
                 </div>
             </div>
         </div>
-
     </div>
     <!-- FIN SERVICIOS -->
 
-    <!-- NOTION CTA -->
+    <!-- ============================================== -->
+    <!-- FEDORA ACADEMY (NUEVA SECCIÓN)                 -->
+    <!-- ============================================== -->
+    <div class="academy-wrapper" id="academy">
+        <div class="container">
+
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <h2 style="font-size: 2.8rem; font-weight: 800; color: #0b2b4a;">📘 Fedora™ <span style="color: #facc15;">Academy</span></h2>
+                <p style="color: #4a6a85; font-size: 1.2rem;">Formación especializada en ISO, IA, RRHH y Derecho Dominicano · Precio fijo <strong>$15 USD</strong> por curso</p>
+            </div>
+
+            <!-- === SECCIÓN ISO 9001 === -->
+            <div class="section-block">
+                <div class="section-title-academy">
+                    📋 ISO 9001:2026 · Gestión de Calidad
+                    <span class="section-sub">con y sin Inteligencia Artificial</span>
+                </div>
+                <div class="section-desc">
+                    Microaprendizajes especializados para dominar la norma de calidad más reconocida. Elige el enfoque que mejor se adapte a tus necesidades.
+                </div>
+                <div class="course-grid">
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-noai">📖 Sin IA</span>
+                        <h4>Interpretación de ISO 9001 (Fundamentos)</h4>
+                        <p>Aprende a leer, interpretar y aplicar los requisitos de la norma ISO 9001:2026 en tu organización.</p>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Interpretaci%C3%B3n%20ISO%209001%20(Sin%20IA)" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT</span>
+                        <h4>Interpretación de ISO 9001 con ChatGPT</h4>
+                        <p>Utiliza ChatGPT para desglosar los requisitos de la norma, generar ejemplos prácticos y resolver dudas en tiempo real.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · GPT-4</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Interpretaci%C3%B3n%20ISO%209001%20con%20ChatGPT" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · Claude</span>
+                        <h4>Interpretación de ISO 9001 con Claude</h4>
+                        <p>Usa Claude de Anthropic para analizar la norma, redactar procedimientos y preparar documentación del SGC.</p>
+                        <span class="ai-tools">🛠️ Claude 3.5 Sonnet</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Interpretaci%C3%B3n%20ISO%209001%20con%20Claude" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Claude + Gemini</span>
+                        <h4>Auditoría en ISO 9001 con IA</h4>
+                        <p>Domina las técnicas de auditoría utilizando ChatGPT, Claude y Gemini para generar listas de verificación y preparar informes.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Claude · Gemini · Copilot</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Auditor%C3%ADa%20ISO%209001%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Copilot</span>
+                        <h4>Implementación ISO 9001 con IA</h4>
+                        <p>Documenta, implementa y mantiene el SGC con apoyo de ChatGPT y Copilot para redacción de procedimientos y matriz de riesgos.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Microsoft Copilot</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Implementaci%C3%B3n%20ISO%209001%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- === SECCIÓN ISO 14001 === -->
+            <div class="section-block">
+                <div class="section-title-academy">
+                    🌿 ISO 14001:2026 · Gestión Ambiental
+                    <span class="section-sub">con Inteligencia Artificial</span>
+                </div>
+                <div class="section-desc">
+                    Capacitación en la nueva versión de la norma ambiental, integrando IA para la optimización de recursos y cumplimiento legal.
+                </div>
+                <div class="course-grid">
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Claude</span>
+                        <h4>Interpretación ISO 14001 con IA</h4>
+                        <p>Análisis detallado de los requisitos ambientales utilizando ChatGPT y Claude para identificar aspectos e impactos.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Claude</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Interpretaci%C3%B3n%20ISO%2014001%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Gemini + Copilot</span>
+                        <h4>Auditoría Ambiental con IA</h4>
+                        <p>Auditorías internas y externas con asistencia de IA para el análisis de datos, generación de informes y planes de acción.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Gemini · Copilot · Mistral</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Auditor%C3%ADa%20Ambiental%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Gemini</span>
+                        <h4>Gestión de Residuos y Huella de Carbono con IA</h4>
+                        <p>Optimiza la gestión de residuos y calcula tu huella de carbono utilizando modelos predictivos de IA.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Gemini</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Residuos%20y%20Huella%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- === SECCIÓN ISO 45001 === -->
+            <div class="section-block">
+                <div class="section-title-academy">
+                    🛡️ ISO 45001 · Seguridad y Salud en el Trabajo
+                    <span class="section-sub">con Inteligencia Artificial Predictiva</span>
+                </div>
+                <div class="section-desc">
+                    Microcursos diseñados para prevenir riesgos laborales y cumplir con la norma internacional, potenciados con análisis predictivo de IA.
+                </div>
+                <div class="course-grid">
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Claude</span>
+                        <h4>Interpretación ISO 45001 con IA</h4>
+                        <p>Desglose de los requisitos de SST, usando ChatGPT y Claude para la identificación de peligros y evaluación de riesgos.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Claude</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Interpretaci%C3%B3n%20ISO%2045001%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Copilot + Gemini</span>
+                        <h4>Auditoría en SST con IA</h4>
+                        <p>Realiza auditorías de seguridad más eficientes, con IA que sugiere áreas críticas y genera reportes automáticos de cumplimiento.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Copilot · Gemini</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Auditor%C3%ADa%20SST%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · Machine Learning Predictivo</span>
+                        <h4>Prevención de Riesgos con IA Predictiva</h4>
+                        <p>Anticípate a los accidentes laborales utilizando modelos de machine learning sobre datos históricos. Análisis de indicadores líderes y tendencias.</p>
+                        <span class="ai-tools">🛠️ ML · SHAP · XAI</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Riesgos%20Predictivos%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- === SECCIÓN ISO 27001 === -->
+            <div class="section-block">
+                <div class="section-title-academy">
+                    🔒 ISO/IEC 27001 · Seguridad de la Información
+                    <span class="section-sub">con Inteligencia Artificial</span>
+                </div>
+                <div class="section-desc">
+                    Protege los datos de tu organización con la norma líder en ciberseguridad, utilizando IA para la detección de vulnerabilidades.
+                </div>
+                <div class="course-grid">
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Claude</span>
+                        <h4>Interpretación ISO 27001 con IA</h4>
+                        <p>Comprende los controles del Anexo A y los requisitos del SGSI con ayuda de ChatGPT y Claude para mapear activos y riesgos.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Claude</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Interpretaci%C3%B3n%20ISO%2027001%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · LLM + NLP</span>
+                        <h4>Auditoría en Ciberseguridad con IA</h4>
+                        <p>Auditoría de cumplimiento de ISO 27001 con herramientas de IA: NLP para análisis de documentos y LLM para entrevistas conversacionales.</p>
+                        <span class="ai-tools">🛠️ LLM · NLP · Computer Vision</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Auditor%C3%ADa%20Ciberseguridad%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Gemini</span>
+                        <h4>Gestión de Riesgos de IA (ISO 27001 + ISO 42001)</h4>
+                        <p>Aborda los nuevos riesgos que los sistemas de IA suponen para la seguridad de la información. Clasificación de datos sensibles y evaluación de riesgos de IA.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Gemini</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Riesgos%20de%20IA%20en%20ISO%2027001" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- === SECCIÓN ISO 50001 === -->
+            <div class="section-block">
+                <div class="section-title-academy">
+                    ⚡ ISO 50001 · Gestión de Energía
+                    <span class="section-sub">con Inteligencia Artificial</span>
+                </div>
+                <div class="section-desc">
+                    Implementa un Sistema de Gestión de Energía (SGEn) conforme a la norma ISO 50001, con asistencia de IA para optimizar el consumo.
+                </div>
+                <div class="course-grid">
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Claude</span>
+                        <h4>Interpretación ISO 50001 con IA</h4>
+                        <p>Comprende los requisitos de la norma ISO 50001:2018 y su enmienda sobre acción climática, utilizando IA para analizar los consumos energéticos.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Claude</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Interpretaci%C3%B3n%20ISO%2050001%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · Gemini + ChatGPT</span>
+                        <h4>Optimización Energética con IA</h4>
+                        <p>Usa IA para analizar patrones de consumo, identificar oportunidades de ahorro y predecir demandas energéticas.</p>
+                        <span class="ai-tools">🛠️ Gemini · ChatGPT</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Optimizaci%C3%B3n%20Energ%C3%A9tica%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- === SECCIÓN ISO 26000 === -->
+            <div class="section-block">
+                <div class="section-title-academy">
+                    🌍 ISO 26000 · Responsabilidad Social
+                    <span class="section-sub">con Inteligencia Artificial</span>
+                </div>
+                <div class="section-desc">
+                    Guía de responsabilidad social empresarial (RSE) basada en los siete principios de ISO 26000.
+                </div>
+                <div class="course-grid">
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Claude</span>
+                        <h4>Interpretación ISO 26000 con IA</h4>
+                        <p>Comprende los principios y materias fundamentales de la responsabilidad social, con asistencia de IA para mapear stakeholders.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Claude</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Interpretaci%C3%B3n%20ISO%2026000%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Gemini</span>
+                        <h4>Reporte de Sostenibilidad y RSE con IA</h4>
+                        <p>Genera reportes de sostenibilidad alineados con GRI y los principios de ISO 26000, utilizando IA para recopilar y analizar datos ESG.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Gemini</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Reporte%20RSE%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- === SECCIÓN ISO 37301 === -->
+            <div class="section-block">
+                <div class="section-title-academy">
+                    ⚖️ ISO 37301 · Compliance y Ética
+                    <span class="section-sub">con Inteligencia Artificial</span>
+                </div>
+                <div class="section-desc">
+                    Implementa un Sistema de Gestión de Compliance (CMS) conforme a la primera norma global certificable en compliance.
+                </div>
+                <div class="course-grid">
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Claude</span>
+                        <h4>Interpretación ISO 37301 con IA</h4>
+                        <p>Comprende los requisitos y la orientación para la implantación de un sistema de gestión de compliance transversal.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Claude</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Interpretaci%C3%B3n%20ISO%2037301%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Gemini</span>
+                        <h4>Gestión de Riesgos de Compliance con IA</h4>
+                        <p>Automatiza la identificación y evaluación de riesgos de cumplimiento normativo, utilizando IA para monitorizar cambios legislativos.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Gemini</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Riesgos%20de%20Compliance%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- === SECCIÓN ISO 56001 === -->
+            <div class="section-block">
+                <div class="section-title-academy">
+                    💡 ISO 56001 · Innovación
+                    <span class="section-sub">con Inteligencia Artificial</span>
+                </div>
+                <div class="section-desc">
+                    Implementa un Sistema de Gestión de la Innovación conforme a ISO 56001:2024, el primer marco certificable dedicado a la innovación.
+                </div>
+                <div class="course-grid">
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Claude</span>
+                        <h4>Interpretación ISO 56001 con IA</h4>
+                        <p>Comprende los requisitos para desarrollar y demostrar la capacidad de innovación de tu organización.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Claude</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Interpretaci%C3%B3n%20ISO%2056001%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Gemini</span>
+                        <h4>Gestión del Ciclo de Innovación con IA</h4>
+                        <p>Usa IA para todo el ciclo: ideación, prototipado, prueba y escalado. Mide y mejora el rendimiento de la innovación con análisis predictivo.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Gemini</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Ciclo%20de%20Innovaci%C3%B3n%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- === SECCIÓN ODS === -->
+            <div class="section-block">
+                <div class="section-title-academy">
+                    🎯 Planificación Estratégica con ODS
+                    <span class="section-sub">con Inteligencia Artificial</span>
+                </div>
+                <div class="section-desc">
+                    Integra los 17 Objetivos de Desarrollo Sostenible (ODS) en tu plan estratégico. Usa IA para medir impacto y reportar resultados.
+                </div>
+                <div class="course-grid">
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Gemini</span>
+                        <h4>ODS y Estrategia Empresarial con IA</h4>
+                        <p>Alinea tu estrategia corporativa con los ODS. Identifica los ODS más relevantes para tu sector y define KPIs de sostenibilidad.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Gemini</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20ODS%20y%20Estrategia%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Claude</span>
+                        <h4>Medición de Impacto ODS con IA</h4>
+                        <p>Mide y reporta el impacto de tus iniciativas en los ODS utilizando IA para analizar datos, generar dashboards y preparar reportes de sostenibilidad.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Claude</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Medici%C3%B3n%20de%20Impacto%20ODS%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- === SECCIÓN GESTIÓN DE PROYECTOS === -->
+            <div class="section-block">
+                <div class="section-title-academy">
+                    📊 Gestión de Proyectos · Microcursos Especializados
+                    <span class="section-sub">con y sin IA</span>
+                </div>
+                <div class="section-desc">
+                    Formación práctica para liderar proyectos con éxito. Cada microcurso se enfoca en un área específica de la gestión de proyectos.
+                </div>
+                <div class="course-grid">
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-noai">📖 Sin IA</span>
+                        <h4>Fundamentos de Gestión de Proyectos (PMI)</h4>
+                        <p>Ciclo de vida del proyecto, cronogramas, presupuestos, gestión de stakeholders.</p>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Fundamentos%20de%20GP" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-noai">📖 Sin IA</span>
+                        <h4>Metodologías Ágiles (Scrum, Kanban)</h4>
+                        <p>Domina las frameworks ágiles más utilizadas: Scrum, Kanban, y metodologías híbridas.</p>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Metodolog%C3%ADas%20%C3%81giles" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT</span>
+                        <h4>Gestión de Proyectos con ChatGPT</h4>
+                        <p>Usa ChatGPT para redactar actas, generar informes de avance y crear cronogramas.</p>
+                        <span class="ai-tools">🛠️ ChatGPT</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20GP%20con%20ChatGPT" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item" style="border: 2px solid #d48f2b; background: #fffdf7;">
+                        <span class="ia-tag ia-tag-gold">🛠️ Herramienta · Notion</span>
+                        <h4>Curso Básico: Gestión de Proyectos con Notion</h4>
+                        <p>Aprende a crear tu propio sistema de gestión de tareas, cronogramas y bases de datos en Notion desde cero.</p>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20curso%20de%20Notion%20por%20%2415%20USD" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Claude</span>
+                        <h4>Gestión de Riesgos en Proyectos con IA</h4>
+                        <p>Identifica, evalúa y mitiga riesgos utilizando IA para análisis predictivo y generación de planes de contingencia.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Claude</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Riesgos%20en%20Proyectos%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Gemini</span>
+                        <h4>Dashboard y Reportes de Proyectos con IA</h4>
+                        <p>Crea dashboards interactivos y reportes ejecutivos automatizados utilizando IA para visualizar el estado y progreso de tus proyectos.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Gemini</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Dashboards%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- === SECCIÓN RRHH === -->
+            <div class="section-block hr-block">
+                <div class="section-title-academy">
+                    👥 Recursos Humanos · Gestión de Personas y Desempeño
+                    <span class="section-sub">con y sin IA / Apps</span>
+                </div>
+                <div class="section-desc">
+                    Potencia la gestión del talento humano. Microcursos enfocados en KPI, bienestar, cambio, innovación, tableros de control y evaluación de desempeño.
+                </div>
+                <div class="course-grid">
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-noai">📊 Sin IA</span>
+                        <h4>Gestión de KPIs de RRHH (Fundamentos)</h4>
+                        <p>Aprende a definir, medir y analizar los indicadores clave de gestión de recursos humanos.</p>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20KPIs%20de%20RRHH%20(Sin%20IA)" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Gemini</span>
+                        <h4>KPIs de RRHH con IA Predictiva</h4>
+                        <p>Análisis predictivo de rotación, absentismo y productividad usando ChatGPT y Gemini.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Gemini</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20KPIs%20de%20RRHH%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-noai">❤️ Sin IA</span>
+                        <h4>Bienestar Laboral y Clima Organizacional</h4>
+                        <p>Diseña programas de bienestar, gestión de encuestas de clima y estrategias de engagement.</p>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Bienestar%20(Sin%20IA)" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🧠 Con IA · ChatGPT + Notion</span>
+                        <h4>Bienestar Laboral con IA y Notion</h4>
+                        <p>Análisis de sentimiento en encuestas, generación de planes personalizados y gestión con Notion.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Notion · Zapier</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Bienestar%20con%20IA%20y%20Notion" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-noai">🔄 Sin IA</span>
+                        <h4>Gestión del Cambio (Modelos Kotter, ADKAR)</h4>
+                        <p>Metodologías tradicionales para gestionar la resistencia al cambio y liderar transiciones.</p>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Gesti%C3%B3n%20del%20Cambio%20(Sin%20IA)" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · Claude + Gemini</span>
+                        <h4>Gestión del Cambio con IA</h4>
+                        <p>Simula escenarios de cambio, genera planes de comunicación personalizados y analiza el sentimiento de los empleados.</p>
+                        <span class="ai-tools">🛠️ Claude · Gemini</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Cambio%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-noai">💡 Sin IA</span>
+                        <h4>Gestión de la Innovación en RRHH</h4>
+                        <p>Fomenta la innovación interna, gamificación, gestión de ideas y cultura de mejora continua.</p>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Innovaci%C3%B3n%20en%20RRHH%20(Sin%20IA)" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT</span>
+                        <h4>Innovación en RRHH con IA</h4>
+                        <p>Usa IA para identificar tendencias en talento, generar iniciativas innovadoras de retención, y automatizar procesos.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Midjourney</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Innovaci%C3%B3n%20en%20RRHH%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-noai">📉 Sin IA</span>
+                        <h4>Tableros de Control y Reportería (Excel/BI)</h4>
+                        <p>Diseña dashboards en Excel y Power BI para RRHH. Aprende a visualizar datos de forma efectiva.</p>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Tableros%20de%20Control%20(Sin%20IA)" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · Power BI + ChatGPT</span>
+                        <h4>Tableros de Control y Reportería con IA</h4>
+                        <p>Automatiza la generación de dashboards. Usa ChatGPT para escribir DAX, narrar insights y crear storytelling con datos.</p>
+                        <span class="ai-tools">🛠️ Power BI · ChatGPT · Tableau</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Tableros%20de%20Control%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-noai">⭐ Sin IA</span>
+                        <h4>Evaluación de Desempeño (360°, Competencias)</h4>
+                        <p>Metodologías tradicionales de evaluación: 360°, gestión por competencias, objetivos (OKR).</p>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Desempe%C3%B1o%20(Sin%20IA)" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Claude</span>
+                        <h4>Evaluación de Desempeño con IA</h4>
+                        <p>Genera feedback continuo, automatiza la redacción de evaluaciones, y crea planes de desarrollo personalizados.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Claude · LMS</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20micro%20de%20Desempe%C3%B1o%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- === SECCIÓN REPÚBLICA DOMINICANA === -->
+            <div class="section-block rd-block">
+                <div class="section-title-academy">
+                    🇩🇴 República Dominicana · Cursos de Inducción y Cumplimiento Legal
+                    <span class="section-sub">con y sin IA</span>
+                </div>
+                <div class="section-desc">
+                    Capacitación especializada en las leyes y normativas dominicanas. Cada curso está diseñado para garantizar el cumplimiento legal y promover una cultura de seguridad, salud y sostenibilidad en tu organización.
+                </div>
+                <div class="course-grid">
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-gold">🌱 Inducción · Ley 64-00</span>
+                        <h4>Inducción General en la Ley 64-00</h4>
+                        <p>Conoce los fundamentos de la Ley General de Medio Ambiente y Recursos Naturales de República Dominicana.</p>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20curso%20de%20Inducci%C3%B3n%20Ley%2064-00" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-gold">⚖️ Inducción · Código Laboral</span>
+                        <h4>Inducción en el Código de Trabajo (Ley 16-92)</h4>
+                        <p>Formación integral sobre la Ley 16-92 que regula las relaciones laborales en República Dominicana.</p>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20curso%20de%20Inducci%C3%B3n%20C%C3%B3digo%20Laboral" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-gold">🛡️ Inducción · Seguridad Laboral</span>
+                        <h4>Inducción en Normas de Seguridad Laboral de RD</h4>
+                        <p>Capacitación sobre el Sistema Dominicano de Seguridad Social (SDSS) y el Seguro de Riesgos Laborales (SRL).</p>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20curso%20de%20Inducci%C3%B3n%20Seguridad%20Laboral%20RD" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-gold">♻️ Inducción · Gestión de Residuos</span>
+                        <h4>Inducción en Gestión de Residuos según Ley 64-00</h4>
+                        <p>Curso enfocado en el marco integral para la gestión de desechos y residuos establecido por la Ley 64-00.</p>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20curso%20de%20Inducci%C3%B3n%20Gesti%C3%B3n%20de%20Residuos" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-gold">📋 Planes de Seguridad</span>
+                        <h4>Desarrollo de Planes de Seguridad Laboral (Reglamento 522-06)</h4>
+                        <p>Aprende a elaborar planes de seguridad y salud en el trabajo conforme al Reglamento 522-06.</p>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20curso%20de%20Planes%20de%20Seguridad%20522-06" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-gold">📋 Programas de Seguridad</span>
+                        <h4>Desarrollo de Programas de Seguridad Laboral (522-06)</h4>
+                        <p>Diseña e implementa programas de seguridad y salud en el trabajo. Incluye identificación de riesgos y Comités Mixtos.</p>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20curso%20de%20Programas%20de%20Seguridad%20522-06" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-gold">🏥 Salud Ocupacional</span>
+                        <h4>Programas de Salud Ocupacional según Normas de RD</h4>
+                        <p>Curso especializado en salud ocupacional basado en la normativa dominicana vigente.</p>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20curso%20de%20Salud%20Ocupacional%20RD" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-gold">⚠️ Prevención de Riesgos</span>
+                        <h4>Inducción en Prevención de Riesgos Laborales</h4>
+                        <p>Formación en prevención de accidentes laborales y enfermedades profesionales bajo la Ley 87-01 / 522-06.</p>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20curso%20de%20Prevenci%C3%B3n%20de%20Riesgos%20RD" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Gemini</span>
+                        <h4>Inducción en SST con IA</h4>
+                        <p>Capacitación en SST potenciada con IA. Utiliza ChatGPT y Gemini para analizar normativas y generar programas de seguridad.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Gemini</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20curso%20de%20SST%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Claude</span>
+                        <h4>Inducción en Gestión Ambiental (Ley 64-00) con IA</h4>
+                        <p>Capacitación en la Ley 64-00 con asistencia de IA para identificación de aspectos ambientales y gestión de residuos.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Claude</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20curso%20de%20Gesti%C3%B3n%20Ambiental%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Claude</span>
+                        <h4>Inducción en Derecho Laboral con IA</h4>
+                        <p>Capacitación en el Código de Trabajo con asistencia de IA para resolver casos prácticos y redactar contratos.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Claude</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20curso%20de%20Derecho%20Laboral%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ML Predictivo</span>
+                        <h4>Inducción en Gestión de Riesgos Laborales con IA Predictiva</h4>
+                        <p>Capacitación avanzada utilizando machine learning para predecir accidentes y generar alertas tempranas.</p>
+                        <span class="ai-tools">🛠️ ML · SHAP · XAI</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20curso%20de%20Riesgos%20Laborales%20con%20IA%20Predictiva" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Gemini</span>
+                        <h4>Inducción en Gestión de Residuos con IA</h4>
+                        <p>Optimiza la clasificación, traza rutas de recolección y genera reportes de cumplimiento con IA.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Gemini</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20curso%20de%20Residuos%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <span class="ia-tag ia-tag-ai">🤖 Con IA · ChatGPT + Claude</span>
+                        <h4>Inducción en Salud Ocupacional con IA</h4>
+                        <p>Análisis de datos de salud, identificación de patrones de enfermedades profesionales y elaboración de programas de bienestar.</p>
+                        <span class="ai-tools">🛠️ ChatGPT · Claude</span>
+                        <div class="price-tag">💰 $15 USD</div>
+                        <div class="btn-group">
+                            <a href="https://www.paypal.com/ncp/payment/DJFQX3LYEXAME" target="_blank" class="btn btn-paypal-card">💳 Pagar $15 con PayPal</a>
+                            <a href="https://wa.me/18493536710?text=Hola%2C%20quiero%20comprar%20el%20curso%20de%20Salud%20Ocupacional%20con%20IA" target="_blank" class="btn btn-whatsapp">📲 WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rd-message">
+                    <p>📞 ¿Eres una empresa? Todos los cursos tienen precio fijo de <strong>$15 USD</strong> por persona.</p>
+                    <p>📧 <a href="mailto:fedorabueno@gmail.com">fedorabueno@gmail.com</a> · 📱 <a href="https://wa.me/18493536710" target="_blank">wa.me/18493536710</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- FIN ACADEMY -->
+
+    <!-- ============================================== -->
+    <!-- NOTION CTA                                      -->
+    <!-- ============================================== -->
     <div class="container" id="notion">
         <div class="notion-cta">
             <h3 style="font-size: 1.8rem; font-weight: 700; color: #0b1a2e; margin-bottom: 8px;">
@@ -1316,7 +2331,9 @@
         </div>
     </div>
 
-    <!-- PAYMENT SECTION -->
+    <!-- ============================================== -->
+    <!-- PAYMENT SECTION                                -->
+    <!-- ============================================== -->
     <section class="payment-section" id="pagos">
         <div class="container">
             <h2><i class="fas fa-credit-card" style="color: #facc15;"></i> Proceso de contratación</h2>
@@ -1328,7 +2345,9 @@
         </div>
     </section>
 
-    <!-- CONTACT SECTION (sin formulario) -->
+    <!-- ============================================== -->
+    <!-- CONTACT SECTION                                -->
+    <!-- ============================================== -->
     <div class="container" id="contacto">
         <div class="contact-section">
             <h2><i class="fas fa-paper-plane" style="color: #facc15;"></i> Contáctame</h2>
@@ -1346,16 +2365,17 @@
         </div>
     </div>
 
-    <!-- FOOTER -->
+    <!-- ============================================== -->
+    <!-- FOOTER                                         -->
+    <!-- ============================================== -->
     <footer class="footer">
         <div class="container">
             <div style="font-size: 1.6rem; font-weight: 800; color: #facc15;">Fedora™ <span style="color: white;">Studio</span></div>
             <p style="max-width: 400px; margin: 8px auto;">Business Intelligent Solutions · Ingeniería, automatización e IA.</p>
             <div class="socials">
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/ing_fedora_bueno" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/fedorabueno" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://pinterest.com/fedoratmstudio" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
             </div>
             <p style="font-size: 0.85rem; margin-top: 8px;">© 2026 Fedora™ Studio · Todos los derechos reservados</p>
         </div>
